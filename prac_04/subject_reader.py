@@ -8,8 +8,8 @@ FILENAME = "subject_data.txt"
 
 def main():
     data = get_data()
-    print(data)
-
+    # print(data)
+    data_print (data)
 
 def get_data():
     """Read data from file formatted like: subject,lecturer,number of students."""
@@ -27,6 +27,10 @@ def get_data():
         print("----------")
     input_file.close()
     return data
+
+def data_print (data):
+    for i in data:
+        print("{} is taught by {} and has {} students.".format(*i))
 
 
 main()
