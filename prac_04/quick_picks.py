@@ -11,5 +11,6 @@ for i in range (number_of_picks):
     for j in range (line_size):
         number = random.randint(minimum, maximum )
         quick_picks.append(number)
-    print(quick_picks)
+print(quick_picks)
+
 #struggled with working this one out sorry
