@@ -27,7 +27,7 @@ def main():
 
             else:
                 print(("Guitar {}: {} ({}), worth ${:5,.2f}{}".format(i + 1, guitar.name, guitar.year, guitar.cost,
-                                                              vintage_string)))
+                                                                      vintage_string)))
             i = i + 1
 
 
