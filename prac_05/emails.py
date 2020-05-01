@@ -16,11 +16,13 @@ def main():
     for email, name in email_and_names.items():
         print("{} ({})".format(name, email))
 
-#function that gets the users name from the email.
+
+# function that gets the users name from the email.
 def name_from_email(email):
-    prefix= email.split('@')[0]
-    parts= prefix.split('.')
-    name= " ".join(parts).title()
+    prefix = email.split('@')[0]
+    parts = prefix.split('.')
+    name = " ".join(parts).title()
     return name
+
 
 main()
